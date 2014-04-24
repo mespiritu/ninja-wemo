@@ -28,6 +28,6 @@
   },
   "config": {
     "deviceScanInterval": 60000,
-    "devicePollInterval": 2000
+    "devicePollInterval": 5000
   }
 }

@@ -53,7 +53,7 @@ driver.on('register', function(device) {
     // When we see a relay device, write alternating true/false values to it every 5 seconds
     setInterval(function() {
        device.write(x=!x);
-    }, 5000);
+    }, 3000);
   }
 
 });
