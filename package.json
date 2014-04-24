@@ -23,8 +23,8 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "wemo": "0.1.0",
-    "underscore": "^1.6.0"
+    "wemo": "git://github.com/ninjablocks/node-wemo.git",
+    "underscore": "1.6.0"
   },
   "config": {
     "deviceScanInterval": 60000,
