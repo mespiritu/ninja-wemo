@@ -15,7 +15,7 @@ function Driver(opts,app) {
   app.once('client::up', this.init.bind(this));
 
   // Scan for devices once every minute (by default) (existing devices will be updated if ip or port changes)
-  setInterval(this.scan.bind(this), opts.deviceScanInterval);
+  setInterval(this.scan.bind(this), opts.deviceScanInterval || 60000);
 
   // We store any found devices here, indexed by serial number (so we can update ip+port if they change)
   this.devices = {};
