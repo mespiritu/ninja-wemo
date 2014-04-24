@@ -25,16 +25,12 @@ function Driver(opts,app) {
  * Discover and load WeMos
  */
 Driver.prototype.init = function(){
-  this.scan();
+  setTimeout(function() {
+    this.scan();
+  }.bind(this), 2000);
 };
 
 Driver.prototype.scan = function() {
-
-  // Stop an existing search if there was one running.
-  if (this.search) {
-    this.search.stop();
-  }
-
   // Discover WeMos
   this.search = WeMo.Search();
   this.search.on('found', this.load.bind(this));
