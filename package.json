@@ -23,7 +23,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "wemo": "git://github.com/ninjablocks/node-wemo.git",
+    "wemo": "git://github.com/mespiritu/node-wemo.git",
     "underscore": "1.6.0"
   },
   "config": {
